@@ -23,6 +23,7 @@ main().then(()=>{
     console.log("first test run is OK!!!")
 }).catch(e=>{
     console.error("first run error !!!!!!!!!!!!!!!",e)
+    process.exit(1)
 })
 
 // setInterval(()=>{
