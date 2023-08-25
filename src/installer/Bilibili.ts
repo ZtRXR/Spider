@@ -10,6 +10,7 @@ const insBilibili = async ()=>{
     await AppDataSource.manager.save(BiliWeb)
     const findBili = await AppDataSource.manager.find(Web)
     console.log("Created",findBili)
+    await AppDataSource.destroy()
 }
 
 insBilibili()
