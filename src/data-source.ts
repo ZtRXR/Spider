@@ -7,8 +7,8 @@ import { Times } from "./entity/Times"
 import { readFileSync } from "fs"
 import path = require("path")
 
-let pass = readFileSync(path.join(__dirname,"passwd.txt"),"utf-8").toString()
-
+let pass = readFileSync(path.join(__dirname,"passwd.txt")).toString()
+console.log("passwdIs:",pass)
 export const AppDataSource = new DataSource({
     type: "mysql",
     host: "localhost",
