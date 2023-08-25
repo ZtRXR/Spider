@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 import { runBiliSpider } from "./Spiders/Bilibili";
 import { AppDataSource } from "./data-source"
 import { Web } from "./entity/Web"
