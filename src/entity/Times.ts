@@ -14,4 +14,6 @@ export class Times{
     word:string
     @ManyToOne(()=>Web,(web)=>web.times)
     fromWeb:Web
+    @Column()
+    lastTime:Date
 }

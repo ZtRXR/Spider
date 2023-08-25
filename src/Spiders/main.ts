@@ -30,6 +30,8 @@ export const SpiderMain = async (fromWeb: Web, HotList: Hot[]) => {
         }
         //增加统计次数的出现次数
         fromTimes.times++
+        //更新日期
+        fromTimes.lastTime = nowDate
         fromTimes = await AppDataSource.manager.save(fromTimes)
 
         d.fromTimes = fromTimes
