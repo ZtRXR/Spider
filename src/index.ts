@@ -25,10 +25,10 @@ main().then(()=>{
     console.error("first run error !!!!!!!!!!!!!!!",e)
 })
 
-setInterval(()=>{
-    main().then(()=>{
-        console.log("run is OK!!!")
-    }).catch(e=>{
-        console.error("run error !!!!!!!!!!!!!!!",e)
-    })
-},1000*60*15)
+// setInterval(()=>{
+//     main().then(()=>{
+//         console.log("run is OK!!!")
+//     }).catch(e=>{
+//         console.error("run error !!!!!!!!!!!!!!!",e)
+//     })
+// },1000*60*15)
