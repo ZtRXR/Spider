@@ -2,6 +2,7 @@ import { AppDataSource } from "../data-source"
 import { Web } from "../entity/Web"
 
 const insBilibili = async ()=>{
+    await AppDataSource.initialize()
     const BiliWeb = new Web()
     BiliWeb.name="Bilibili"
     BiliWeb.fromUrl="https://www.bilibili.com/"
