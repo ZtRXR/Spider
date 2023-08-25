@@ -1,7 +1,7 @@
 import { AppDataSource } from "../data-source"
 import { Web } from "../entity/Web"
 
-const insBilibili = async ()=>{
+export const insBilibili = async ()=>{
     await AppDataSource.initialize()
     const BiliWeb = new Web()
     BiliWeb.name="Bilibili"
@@ -13,7 +13,6 @@ const insBilibili = async ()=>{
     await AppDataSource.destroy()
 }
 
-insBilibili()
 // export const insBilibili = async ()=>{
 //     const getBili = await AppDataSource.manager.findOne(Web,{
 //         where:{

@@ -6,13 +6,15 @@ import { Web } from "./entity/Web"
 import { Times } from "./entity/Times"
 import { readFileSync } from "fs"
 import path = require("path")
+// import { main } from "."
 
 export const AppDataSource = new DataSource({
     type: "mysql",
     host: "localhost",
     port: 3306,
     username: "root",
-    password: "ZengtudorRXR2008",
+    // password: "ZengtudorRXR2008",
+    password: "Zengtudor",
     database: "hot",
     synchronize: true,
     logging: false,
@@ -20,6 +22,7 @@ export const AppDataSource = new DataSource({
     migrations: [],
     subscribers: [],
 })
+
 
 // export const AppDataSource = new DataSource({
 //     type: "sqlite",
