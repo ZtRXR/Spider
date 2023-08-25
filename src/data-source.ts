@@ -7,13 +7,12 @@ import { Times } from "./entity/Times"
 import { readFileSync } from "fs"
 import path = require("path")
 
-readFileSync(path.join(__dirname,"passwd.txt")).toString()
 export const AppDataSource = new DataSource({
     type: "mysql",
     host: "localhost",
     port: 3306,
     username: "root",
-    password: readFileSync(path.join(__dirname,"passwd.txt")).toString(),
+    password: "Zengtudor",
     database: "hot",
     synchronize: true,
     logging: false,
