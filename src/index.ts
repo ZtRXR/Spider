@@ -9,8 +9,12 @@ const main = async ()=>{
     await AppDataSource.initialize()
     // await AppDataSource.synchronize()
     // await insBilibili()
-    await runBiliSpider()
-    
+
+    let tasks:Promise<void>[] = []
+
+    tasks.push(runBiliSpider())
+
+    await Promise.all(tasks)
     
     await AppDataSource.destroy()
     const endTime = new Date()
