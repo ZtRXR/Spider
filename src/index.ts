@@ -21,7 +21,7 @@ const main = async () => {
     setTimeout(async ()=>{
         await AppDataSource.destroy() 
         console.log("已关闭数据库...")
-    },1000*60)
+    },1000*10)
     console.log("延时数据库关闭....","10s")
 
     // setTimeout(async ()=>{
